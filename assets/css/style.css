@@ -23,7 +23,8 @@ form {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.303);
 }
 
-p {
+.output {
+    display: flex;
     width: 300px;
 }
 

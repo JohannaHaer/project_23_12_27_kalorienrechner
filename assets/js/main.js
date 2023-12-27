@@ -29,8 +29,8 @@ const calc = () => {
         palResult = (bmrResult * pal).toFoxed(0)
     }
 
-    output.textContent = `${bmrResult} kcal`
-    output2.textContent = `${palResult} kcal`
+    output.textContent = ` ${bmrResult} kcal`
+    output2.textContent = ` ${palResult} kcal`
     // console.log("ebene2: die funktion wird aufgerufen, wenn jemand im html auf berehcnen klickt. dabei wird der eingetragene wert aus dem gewichtsfeld in meiner variable für die berechnung gespeichert");
     // console.log("gewicht aus calc " + gewicht);
 
