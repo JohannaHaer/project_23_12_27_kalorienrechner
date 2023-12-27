@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Kalorienrechner</title>
 </head>
 <body>
+    <h1>Kalorienrechner</h1>
+    <label for="gewicht">Gib dein Körpergewicht in kg an</label>
+    <input type="number" name="gewicht" id="gewicht">
+    <label for="groeße">Gib deine Körpergröße in cm an</label>
+    <input type="number" name="groeße" id="groeße">
+    <label for="alter">Gib dein Alter an</label>
+    <input type="number" name="alter" id="alter">
+    <label for="geschlecht">Wie ist dein biologisches Geschlecht?</label>
+    <input type="radio" name="geschlecht" id="weiblich">
+    <label for="weiblich">Weiblich</label>
+    <input type="radio" name="geschlecht" id="maennlich">
+    <label for="maennlich">Männlich</label>
+    <select name="" id="">
+    <option value="">Tätigkeit</option>
+    <option value="1">schlafen</option>
+    <option value="2">Nur sitzen oder liegen</option>
+    <option value="3">Fast ausschließlich sitzend, wenig Freizeitaktivitäten</option>
+    <option value="4">Überwiegend sitzend, mit zusätzlichen stehenden / gehenden Tätigkeiten</option>
+    <option value="5">Überwiegend stehende / gehende Tätigkeiten</option>
+    </select>
+    <input type="submit" value="Berechnen">
+    <p id="output"></p>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
