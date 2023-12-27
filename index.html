@@ -7,34 +7,40 @@
     <title>Kalorienrechner</title>
 </head>
 <body>
-    <h1>Kalorienrechner</h1>
-    <form onsubmit="calc(); return false">
-        <label for="gewicht">Gib dein Körpergewicht in kg an</label>
-        <input type="number" name="gewicht" id="gewicht">
-        <label for="groesse">Gib deine Körpergröße in cm an</label>
-        <input type="number" name="groesse" id="groesse">
-        <label for="alter">Gib dein Alter an</label>
-        <input type="number" name="alter" id="alter">
-        
-        <input type="radio" name="geschlecht" id="weiblich">
-        <label for="weiblich">Weiblich</label>
-        <input type="radio" name="geschlecht" id="maennlich">
-        <label for="maennlich">Männlich</label>
-        <select name="pal" id="pal">
-        <option value="">Tätigkeit</option>
-        <option value="0.95">Sitzend</option>
-        <option value="1.375">Leicht aktiv</option>
-        <option value="1.55">Mäßig aktiv</option>
-        <option value="1.725">Sehr aktiv</option>
-        <option value="1.9">Sehr stark aktiv</option>
-        </select>
-        <input type="submit" value="Berechnen">
-    </form>
+    <div class="container">
+        <h1>Kalorienrechner</h1>
+        <form onsubmit="calc(); return false">
+            <label for="gewicht">Gib dein Körpergewicht in kg an</label>
+            <input type="number" name="gewicht" id="gewicht">
+            <label for="groesse">Gib deine Körpergröße in cm an</label>
+            <input type="number" name="groesse" id="groesse">
+            <label for="alter">Gib dein Alter an</label>
+            <input type="number" name="alter" id="alter">
+            
+            <div>
+                <input type="radio" name="geschlecht" id="weiblich">
+                <label for="weiblich">Weiblich</label>
+                <input type="radio" name="geschlecht" id="maennlich">
+                <label for="maennlich">Männlich</label>
+            </div>
+            <select name="pal" id="pal">
+            <option value="">Tätigkeit</option>
+            <option value="0.95">Sitzend</option>
+            <option value="1.375">Leicht aktiv</option>
+            <option value="1.55">Mäßig aktiv</option>
+            <option value="1.725">Sehr aktiv</option>
+            <option value="1.9">Sehr stark aktiv</option>
+            </select>
+            <input type="submit" value="Berechnen">
+        </form>
+    
 
     <!-- <form action="" onsubmit="test(); return false">
     <input type="submit" value="Teste">
     </form> -->
-    <p id="output"></p>
+        <p id="output"><span>Grundumsatz: </span></p>
+        <p id="output2"><span>Gesamtumsatz: </span></p>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
